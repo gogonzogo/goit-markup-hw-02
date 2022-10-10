@@ -78,12 +78,13 @@ button {
     background: #2196F3;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
     border-radius: 4px;
-    cursor: pointer
+    
 }
 
 button:hover,
 button:focus {
     color: #9bd2ff;
+    cursor: pointer
 }
 
 /* Main Middle */
@@ -170,7 +171,7 @@ footer {
     color: #212121;
     background: #F5F4FA;
     border-radius: 4px;
-    
+
 }
 
 .portfolio-buttons .portfolio:hover,

@@ -92,7 +92,7 @@ h1 {
 
 .topmain-button:hover,
 .topmain-button:focus {
-    color: #9bd2ff;
+    background-color: rgba(24, 140, 232, 1);
 }
 
 /* Main Middle */

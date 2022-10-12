@@ -19,47 +19,43 @@
       <nav>
         <a class="logo" href="./index.html">WebStudio</a>
         <!-- Header Navigation -->
-        <div>
-          <ul class="page-traverse">
-            <li>
-              <a class="traverse" href="./index.html" title="studio">Studio</a>
-            </li>
-            <li>
-              <a class="traverse" href="./portfolio.html">Portfolio</a>
-            </li>
-            <li>
-              <a class="traverse" href="#">Contacts</a>
-            </li>
-          </ul>
-        </div>
-      </nav>
-      <!-- Header Contact Details -->
-      <div>
-        <ul class="header-contacts">
+        <ul class="page-traverse">
           <li>
-            <a class="contact" href="mailto:info@devstudio.com"
-              >info@devstudio.com</a
+            <a class="traverse" href="./index.html" title="studio"
+              >Studio</a
             >
           </li>
           <li>
-            <a class="contact" href="tel:+38 096 111 11 11"
-              >+38 096 111 11 11</a
-            >
+            <a class="traverse current-page" href="./portfolio.html">Portfolio</a>
+          </li>
+          <li>
+            <a class="traverse" href="#">Contacts</a>
           </li>
         </ul>
-      </div>
+      </nav>
+      <!-- Header Contact Details -->
+      <ul class="header-contacts">
+        <li>
+          <a class="contact" href="mailto:info@devstudio.com"
+            >info@devstudio.com</a
+          >
+        </li>
+        <li>
+          <a class="contact" href="tel:+38 096 111 11 11">+38 096 111 11 11</a>
+        </li>
+      </ul>
     </header>
     <!-- Main Top -->
     <main>
-      <section class="portfolio-buttons">
-        <button class="portfolio" type="button">All</button>
-        <button class="portfolio" type="button">Web-sites</button>
-        <button class="portfolio" type="button">Apps</button>
-        <button class="portfolio" type="button">Design</button>
-        <button class="portfolio" type="button">Marketing</button>
-      </section>
-      <!-- Main Images -->
       <section>
+        <ul>
+          <li><button class="portfolio-filter current-filter" type="button">All</button></li>
+          <li><button class="portfolio-filter" type="button">Web-sites</button></li>
+          <li><button class="portfolio-filter" type="button">Apps</button></li>
+          <li><button class="portfolio-filter" type="button">Design</button></li>
+          <li><button class="portfolio-filter" type="button">Marketing</button></li>
+        </ul>
+        <!-- Main Images -->
         <ul>
           <li>
             <img
@@ -67,8 +63,8 @@
               alt="Image of open laptop"
               width="370"
             />
-            <h3>Technoduck</h3>
-            <p>Web-site</p>
+            <h3 class="product">Technoduck</h3>
+            <p class="category">Web-site</p>
           </li>
           <li>
             <img
@@ -76,8 +72,8 @@
               alt="Image of two basketball players"
               width="370"
             />
-            <h3>Poster New Orlean vs Golden Star</h3>
-            <p>Design</p>
+            <h3 class="product">Poster New Orlean vs Golden Star</h3>
+            <p class="category">Design</p>
           </li>
           <li>
             <img
@@ -85,8 +81,8 @@
               alt="Image of seafood restaraunt logo"
               width="370"
             />
-            <h3>Seafood Restaurant</h3>
-            <p>Apps</p>
+            <h3 class="product">Seafood Restaurant</h3>
+            <p class="category">Apps</p>
           </li>
           <li>
             <img
@@ -94,8 +90,8 @@
               alt="Image of headphones"
               width="370"
             />
-            <h3>Project Prime</h3>
-            <p>Marketing</p>
+            <h3 class="product">Project Prime</h3>
+            <p class="category">Marketing</p>
           </li>
           <li>
             <img
@@ -103,8 +99,8 @@
               alt="Image of product boxes"
               width="370"
             />
-            <h3>Project Boxes</h3>
-            <p>Apps</p>
+            <h3 class="product">Project Boxes</h3>
+            <p class="category">Apps</p>
           </li>
           <li>
             <img
@@ -112,8 +108,8 @@
               alt="Image of iMac"
               width="370"
             />
-            <h3>Inspiration has no Borders</h3>
-            <p>Web-site</p>
+            <h3 class="product">Inspiration has no Borders</h3>
+            <p class="category">Web-site</p>
           </li>
           <li>
             <img
@@ -121,8 +117,8 @@
               alt="Image of open book"
               width="370"
             />
-            <h3>Limited Edition</h3>
-            <p>Design</p>
+            <h3 class="product">Limited Edition</h3>
+            <p class="category">Design</p>
           </li>
           <li>
             <img
@@ -130,8 +126,8 @@
               alt="Image of label tag"
               width="370"
             />
-            <h3>Project Lab</h3>
-            <p>Marketing</p>
+            <h3 class="product">Project Lab</h3>
+            <p class="category">Marketing</p>
           </li>
           <li>
             <img
@@ -139,8 +135,8 @@
               alt="Image of typing on laptop"
               width="370"
             />
-            <h3>Growing Buisness</h3>
-            <p>Apps</p>
+            <h3 class="product">Growing Buisness</h3>
+            <p class="category">Apps</p>
           </li>
         </ul>
       </section>

@@ -1,11 +1,21 @@
+/* Repeated Page Themes */
+:root {
+    --primary-text-color: #212121;
+    --secondary-text-color: #757575;
+}
+
 body {
     font-family: 'Roboto';
     font-style: normal;
     font-size: 14px;
     font-weight: 400;
     letter-spacing: 0.03em;
-    color: #212121;
-    background: #FFFFFF;
+    color: var(--primary-text-color);
+    background-color: #FFFFFF;
+}
+
+ul {
+    list-style-type: none;
 }
 
 /* Header */
@@ -14,22 +24,18 @@ body {
     font-style: normal;
     font-weight: 700;
     font-size: 26px;
-    line-height: 31px;
+    line-height: calc(31/26);
     /* identical to box height */
     color: #2196F3;
     text-decoration: none;
 }
 
-ul {
-    list-style-type: none;
-}
-
 .traverse {
     font-weight: 500;
     font-size: 14px;
-    line-height: 16px;
+    line-height: calc(16/14);
     letter-spacing: 0.02em;
-    color: #212121;
+    color: var(--primary-text-color);
     text-decoration: none
 
 }
@@ -38,34 +44,34 @@ ul {
     color: rgba(33, 150, 243, 1);
 }
 
-.page-traverse .traverse:hover,
-.page-traverse .traverse:focus {
+.traverse:hover,
+.traverse:focus {
     color: #2196F3;
 }
 
-.header-contacts .contact {
+.header-contacts-link {
     font-weight: 500;
     font-size: 14px;
-    line-height: 16px;
+    line-height: calc(16/14);
     letter-spacing: 0.02em;
-    color: #757575;
+    color: var(--secondary-text-color);
     text-decoration: none
 }
 
-.header-contacts .contact:hover,
-.header-contacts .contact:focus {
+.header-contacts-link:hover,
+.header-contacts-link:focus {
     color: #2196F3;
 }
 
-/* Main Top */
-.top-main {
-    background: #2F303A;
+/* Hero Section */
+.hero {
+    background-color: #2F303A;
 }
 
-h1 {
+.hero-title {
     font-weight: 900;
     font-size: 44px;
-    line-height: 60px;
+    line-height: calc(60/44);
     /* or 136% */
     text-align: center;
     letter-spacing: 0.06em;
@@ -73,109 +79,129 @@ h1 {
     color: #FFFFFF;
 }
 
-.topmain-button {
+.hero-button {
     font-family: 'Roboto';
     font-weight: 700;
     font-size: 16px;
-    line-height: 30px;
+    line-height: calc(30/16);
     /* identical to box height, or 188% */
     display: flex;
     align-items: center;
     text-align: center;
     letter-spacing: 0.06em;
     color: #FFFFFF;
-    background: #2196F3;
+    background-color: #2196F3;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
     border-radius: 4px;
     cursor: pointer
 }
 
-.topmain-button:hover,
-.topmain-button:focus {
+.hero-button:hover,
+.hero-button:focus {
     background-color: rgba(24, 140, 232, 1);
 }
 
-/* Main Middle */
+/* Benefits */
 .benefit-title {
     font-weight: 700;
-    line-height: 16px;
+    line-height: calc(16/14);
     text-transform: uppercase;
 }
 
 .benefit-summary {
-    line-height: 24px;
+    line-height: calc(24/14);
     /* or 171% */
-    color: #757575;
+    color: var(--secondary-text-color);
 }
 
-.char-img h2 {
+/* What we do */
+.what-we-do-title {
     font-weight: 700;
     font-size: 36px;
-    line-height: 42px;
+    line-height: calc(42/36);
     text-align: center;
 }
 
-/* Main Bottom */
-.bottom {
-    background: #F5F4FA;
+/* Our Team Bottom */
+.our-team {
+    background-color: #F5F4FA;
 }
 
-.bottom h2 {
+.our-team-title {
     font-weight: 700;
     font-size: 36px;
-    line-height: 42px;
+    line-height: calc(42/36);
     text-align: center;
 }
 
-.name {
+.our-team-name {
     font-weight: 500;
     font-size: 16px;
-    line-height: 19px;
+    line-height: calc(19/16);
     /* identical to box height */    
     text-align: center;
 }
 
-.role {
+.our-team-role {
     font-size: 16px;
-    line-height: 19px;
+    line-height: calc(19/16);
     /* identical to box height */
     text-align: center;
-    color: #757575;
+    color: var(--secondary-text-color);
 }
 
 /* Footer */
-footer {
-    background: #2F303A;
+.footer-section {
+    background-color: #2F303A;
 }
 
-.footer-contacts .contact {
+.footer-contacts-address {
     font-family: 'Roboto';
     font-style: normal;
     font-weight: 400;
     font-size: 14px;
-    line-height: 24px;
+    line-height: calc(24/14);
+    /* or 171% */
+    letter-spacing: 0.03em;
+    color: #FFFFFF;
+    text-decoration: none;
+}
+
+.footer-contacts-address:hover,
+.footer-contacts-address:focus {
+    color: #2196F3;
+}
+
+.footer-contacts-link {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: calc(24/14);
     /* or 171% */    
     color: rgba(255, 255, 255, 0.6);
     text-decoration: none;
 }
 
-.footer-contacts .contact:hover,
-.footer-contacts .contact:focus {
+.footer-contacts-link:hover,
+.footer-contacts-link:focus {
     color: #2196F3;
 }
 
-/* Porfolio Specific Styles */
+/* Porfolio Styles */
+/* Portfolio Filters Section */
 .portfolio-filter {
     font-family: 'Roboto';
     font-weight: 500;
     font-size: 16px;
-    line-height: 26px;
+    line-height: calc(26/16);
     /* identical to box height, or 162% */   
     text-align: center;   
-    color: #212121;
-    background: #F5F4FA;
+    color: var(--primary-text-color);
+    background-color: #F5F4FA;
     border-radius: 4px;
-    cursor: pointer
+    border: none;
+    cursor: pointer;
 }
 
 .portfolio-filter:hover,
@@ -184,20 +210,20 @@ footer {
     font-style: normal;
     font-weight: 500;
     font-size: 16px;
-    line-height: 26px;
+    line-height: calc(26/16);
     /* identical to box height, or 162% */
     text-align: center;
     letter-spacing: 0.03em;
     color: #FFFFFF;
-    background: #2196F3;
+    background-color: #2196F3;
     /* shadow-middle */
     box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px
-     rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
+     rgba(0, 0, 0, 0.388), 0px 2px 2px rgba(0, 0, 0, 0.12);
     border-radius: 4px;
 }
 
 .current-filter {
-    background: #2196F3;
+    background-color: #2196F3;
     /* shadow-middle */    
     box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px
     rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
@@ -205,19 +231,20 @@ footer {
     color: white;
 }
 
-.product {    
+/* Portfiolio Product Section */
+.product-details-item {    
     font-weight: 700;
     font-size: 18px;
-    line-height: 36px;
+    line-height: calc(36/18);
     /* identical to box height, or 200% */    
     letter-spacing: 0.06em;    
-    color: #212121;
+    color: var(--primary-text-color);
 }
 
-.category {
-     font-size: 16px;
-    line-height: 30px;
+.product-details-category {
+    font-size: 16px;
+    line-height: calc(30/16);
     /* identical to box height, or 188% */
-     color: #757575;
+    color: var(--secondary-text-color);
 }
 
